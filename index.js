@@ -44,4 +44,4 @@ class apiwrapper {
     return input
   }
 }
-exports["wrapper"]= apiwrapper;
+module.exports = apiwrapper;
