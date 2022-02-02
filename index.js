@@ -56,7 +56,7 @@ class apiwrapper {
        return output
   }
   static async ukrmemes(){
-    return fetch(`https://www.programmershouse-api.ga/ukrmemes`).then(resource => resource.json()).then(body => body.ukraine)
+    return fetch(`https://www.programmershouse-api.ga/ukrmemes`).then(resource => resource.json()).then(body => body)
   }
    /**
   * @param {string} [text] - текст
