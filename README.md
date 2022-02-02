@@ -9,7 +9,8 @@ let programmershouse = require("programmershouse-wrapper")
 let joke = programmershouse.joke()
 joke.then(result => {
     console.log(result) 
- })```
+ })
+```
 --
 # With function
 ```js
