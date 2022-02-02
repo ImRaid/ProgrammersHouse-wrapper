@@ -12,7 +12,7 @@ class apiwrapper {
   */
   static async eightball(question) {
     if(!question) throw new TypeError("Вкажи запитання!")
-    fetch(`htps://www.programmershouse-api.ga/8ball?питання=${question}).then(resource => resource.json()).then(body => {
+    fetch(`htps://www.programmershouse-api.ga/8ball?питання=${question}`).then(resource => resource.json()).then(body => {
       const input = body.ukraine
       return input
     })
@@ -22,5 +22,14 @@ class apiwrapper {
       const cats = body.ukraine
       return cats
     })
+  }
+  /**
+  * @param {string} [avatar_url] - Аватар користувача
+  */
+  static async ukraine(avatar_url) {
+    fetch(`https://www.programmershouse-api.ga/ukraine?avatar=${avatar_url}`).then(resource => resource.json()).then(body => {
+            const input = body.ukraine
+            return input
+          })
   }
 }
