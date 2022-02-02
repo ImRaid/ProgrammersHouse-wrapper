@@ -1,6 +1,6 @@
 {
   "name": "programmershouse-wrapper",
-  "version": "1.0",
+  "version": "1.0.0",
   "description": "Official wrapper of ProgrammersHouse api",
   "main": "index.js",
   "scripts": {
