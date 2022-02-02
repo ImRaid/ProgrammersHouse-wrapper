@@ -44,3 +44,4 @@ class apiwrapper {
     return input
   }
 }
+exports["wrapper"]= apiwrapper;
