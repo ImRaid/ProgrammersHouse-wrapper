@@ -178,10 +178,7 @@ class apiwrapper {
     if(!key) throw new TypeError("Вкажи тут апі ключ!");
     return fetch(`https://www.programmershouse-api.ga/hentai?key=${key}`).then(resource => resource.json()).then(body => body.ukraine)
   }
-  static async verycoolendpoint(){
-    let cool = `https://www.programmershouse-api.ga/verycoolendpoint`
-    return cool
-  }
+  
 }
 
 
