@@ -29,7 +29,8 @@ class apiwrapper {
   */
   static async ukraine(avatar_url) {
     if(!avatar_url) throw new TypeError("Вкажи посилання на аватар!");
-    return fetch(`https://www.programmershouse-api.ga/ukraine?avatar=${avatar_url}`).then(resource => resource.json()).then(body => body.ukraine)
+    let output =`https://www.programmershouse-api.ga/ukraine?avatar=${avatar_url}`
+    return output
   }
   /**
   * @param {string} [title] - Заголовок посту.
@@ -138,7 +139,8 @@ class apiwrapper {
    
   */
    static async subreddit(reditname){
-    if(!username) throw new TypeError("Вкажи назву саб редіту !");
+    if(!reditname) throw new TypeError("Вкажи назву саб редіту !");
+    if(!reditname.startsWith("r/"))throw new TypeError("Назва сабреддіту має починатися з r/");
     return fetch(`https://www.programmershouse-api.ga/subreddit?name=${reditname}`).then(resource => resource.json()).then(body => body)
   }
   //da
