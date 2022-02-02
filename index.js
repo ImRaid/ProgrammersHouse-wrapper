@@ -125,20 +125,20 @@ class apiwrapper {
     return fetch(`https://www.programmershouse-api.ga/mars`).then(resource => resource.json()).then(body => body.ukraine)
   }
     /**
-  * @param {string} [username] - нік нейм 
+  * @param {string} [username] - нікнейм 
   */
    static async geometrydash(username){
-    if(!username) throw new TypeError("Вкажи нік нейм!");
+    if(!username) throw new TypeError("Вкажи нікнейм!");
     return fetch(`https://www.programmershouse-api.ga/geometrydash?username=${username}`).then(resource => resource.json()).then(body => body)
    }
   static async cosmosfacts(){
     return fetch(`https://www.programmershouse-api.ga/cosmosfacts`).then(resource => resource.json()).then(body => body.ukraine)
   }
-   /** * @param {string} [reditname] - назва саб редіту 
+   /** * @param {string} [redditname] - назва саб редіту 
    
   */
-   static async subreddit(reditname){
-    if(!username) throw new TypeError("Вкажи назву саб редіту !");
+   static async subreddit(redditname){
+    if(!username) throw new TypeError("Вкажи назву сабредіту, яка починається на r/!");
     return fetch(`https://www.programmershouse-api.ga/subreddit?name=${reditname}`).then(resource => resource.json()).then(body => body)
   }
   //da
