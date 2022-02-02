@@ -1,11 +1,8 @@
 const fetch = require('node-fetch')
 
 class apiwrapper {
- 
-  static async joke() {
-    
+  static async joke() {  
   return fetch('https://www.programmershouse-api.ga/joke').then(resource => resource.json()).then(body => body.ukraine)
-    
 }
      
   
@@ -100,8 +97,8 @@ class apiwrapper {
   * @param {string} [text2] - текст
   */
   static async qrcode(text1,tex2){
-     if(!text1) throw new TypeError("Вкажи текст1!");
-     if(!text2) throw new TypeError("Вкажи текст2!");
+     if(!text1) throw new TypeError("Вкажи текст 1!");
+     if(!text2) throw new TypeError("Вкажи текст 2!");
     return fetch(`https://www.programmershouse-api.ga/randomtext?text1=${tex1}&text2=${tex2}`).then(resource => resource.json()).then(body => body.ukraine)
   }
 
@@ -135,12 +132,12 @@ class apiwrapper {
   static async cosmosfacts(){
     return fetch(`https://www.programmershouse-api.ga/cosmosfacts`).then(resource => resource.json()).then(body => body.ukraine)
   }
-   /** * @param {string} [reditname] - назва саб редіту 
+   /** * @param {string} [redditname] - назва сабредіту 
    
   */
-   static async subreddit(reditname){
-    if(!reditname) throw new TypeError("Вкажи назву саб редіту !");
-    if(!reditname.startsWith("r/"))throw new TypeError("Назва сабреддіту має починатися з r/");
+   static async subreddit(redditname){
+    if(!redditname) throw new TypeError("Вкажи назву саб редіту !");
+    if(!redditname.startsWith("r/"))throw new TypeError("Назва сабреддіту має починатися з r/");
     return fetch(`https://www.programmershouse-api.ga/subreddit?name=${reditname}`).then(resource => resource.json()).then(body => body)
   }
   //da
@@ -178,7 +175,6 @@ class apiwrapper {
     if(!key) throw new TypeError("Вкажи тут апі ключ!");
     return fetch(`https://www.programmershouse-api.ga/hentai?key=${key}`).then(resource => resource.json()).then(body => body.ukraine)
   }
-  
 }
 
 
