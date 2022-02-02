@@ -1,0 +1,22 @@
+{
+  "name": "programmershouse-wrapper",
+  "version": "1.0",
+  "description": "Official wrapper of ProgrammersHouse api",
+  "main": "index.js",
+  "dependencies": {
+    "mongoose": "^5.11.11"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "discord",
+    "discord.js",
+    "programmershouse",
+    "api"
+  ],
+  "author": "ProgrammersHouse",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ImRaid/ProgrammersHouse-wrapper/issues"
+  },
+  "homepage": "https://github.com/ImRaid/ProgrammersHouse-wrapper#readme"
+}
