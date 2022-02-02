@@ -36,8 +36,8 @@ class apiwrapper {
   static async reddit(title, description) {
     if(!title) {throw new TypeError("Вкажи заголовок посту!");}
     if(!description) {throw new TypeError("Вкажи опис посту!");}
-    return fetch(`https://www.programmershouse-api.ga/reddit?title=${title}&description=${description}`).then(resource => resource.json()).then(body => body.ukraine)
-   
+    let output =`https://www.programmershouse-api.ga/reddit?title=${title}&description=${description}`
+    return output
   }
   /**
   * @param {string} [avatar_url] - Аватар користувача
