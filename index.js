@@ -140,7 +140,6 @@ class apiwrapper {
     if(!redditname.startsWith("r/"))throw new TypeError("Назва сабреддіту має починатися з r/");
     return fetch(`https://www.programmershouse-api.ga/subreddit?name=${reditname}`).then(resource => resource.json()).then(body => body)
   }
-  //da
    static async randomanime(){
     return fetch(`https://www.programmershouse-api.ga/randomanime`).then(resource => resource.json()).then(body => body.ukraine)
   }
