@@ -44,4 +44,3 @@ class apiwrapper {
     return input
   }
 }
-module.exports = apiwrapper;
