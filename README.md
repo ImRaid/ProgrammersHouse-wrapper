@@ -1,6 +1,11 @@
 # programmershouse-wrapper
 Programmers House api official wrapper
 --
+Install:
+```js
+npm install programmershouse-wrapper
+```
+--
 Example of using:
 # With .then
 ```js
