@@ -90,7 +90,8 @@ class apiwrapper {
   */
    static async qrcode(text){
     if(!text) throw new TypeError("Вкажи текст!");
-    return fetch(`https://www.programmershouse-api.ga/qrcode?text=${text}`).then(resource => resource.json()).then(body => body.ukraine)
+    let url = `https://www.programmershouse-api.ga/qrcode?text=${text}`
+    return url
   }
   /**
   * @param {string} [text1] - текст
