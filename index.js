@@ -99,7 +99,8 @@ class apiwrapper {
   static async qrcode(text1,tex2){
      if(!text1) throw new TypeError("Вкажи текст 1!");
      if(!text2) throw new TypeError("Вкажи текст 2!");
-    return fetch(`https://www.programmershouse-api.ga/randomtext?text1=${tex1}&text2=${tex2}`).then(resource => resource.json()).then(body => body.ukraine)
+     url =`https://www.programmershouse-api.ga/randomtext?text1=${tex1}&text2=${tex2}`
+     return url
   }
 
   static async currentday(){
