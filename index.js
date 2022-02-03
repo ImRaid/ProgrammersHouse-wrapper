@@ -97,11 +97,10 @@ class apiwrapper {
   * @param {string} [text1] - текст
   * @param {string} [text2] - текст
   */
-  static async qrcode(text1,tex2){
-     if(!text1) throw new TypeError("Вкажи текст 1!");
-     if(!text2) throw new TypeError("Вкажи текст 2!");
-     url =`https://www.programmershouse-api.ga/randomtext?text1=${tex1}&text2=${tex2}`
-     return url
+   static async randomtext(text1,tex2){
+     if(!text1) throw new TypeError("Вкажи текст1!");
+     if(!text2) throw new TypeError("Вкажи текст2!");
+    return fetch(`https://www.programmershouse-api.ga/randomtext?text1=${tex1}&text2=${tex2}`).then(resource => resource.json()).then(body => body.ukraine)
   }
 
   static async currentday(){
