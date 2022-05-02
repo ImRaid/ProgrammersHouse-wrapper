@@ -85,6 +85,9 @@ class apiwrapper {
   static async yearsfact(){
     return fetch(`https://www.programmershouse-api.ga/yearsfact`).then(resource => resource.json()).then(body => body.ukraine)
   }
+    static async alerts(){
+    return fetch(`https://www.programmershouse-api.ga/alerts`).then(resource => resource.json()).then(body => body.ukraine)
+  }
   /**
   * @param {string} [text] - текст
   */
